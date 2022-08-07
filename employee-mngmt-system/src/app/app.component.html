@@ -1,5 +1,10 @@
 <h1>First Angular Application!! Hey Akansha 👏</h1>
-<app-login></app-login>
-<app-register></app-register>
-<app-home></app-home>
-<app-employee></app-employee>
+
+<!-- data binding -->
+{{ firstName | uppercase }} {{lastName | uppercase}}
+<br>
+
+<!-- 2. property Binding -->
+<input type="text" [value]=firstName>
+<br>
+<button [disabled] ="isdisabled" [style] = "btnStyle">Click</button>

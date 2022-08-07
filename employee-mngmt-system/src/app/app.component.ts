@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'employee-mngmt-system';
+  firstName : string = 'Akansha';
+  lastName : string = 'Saxena';
+  isdisabled : boolean = false;
+  btnStyle :string = 'color:red'
 }

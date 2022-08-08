@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmployeeService } from '../employee.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  ename:string=''
+  constructor(private _empService:EmployeeService) 
+  { }
 
   ngOnInit(): void {
+    //console.log(this._empService.getName());
+    this.ename = this._empService.getName();
   }
 
 }

@@ -11,4 +11,7 @@ export class AppComponent {
   lastName : string = 'Saxena';
   isdisabled : boolean = false;
   btnStyle :string = 'color:red'
+
+  handleClick=()=>alert("clicked on button")
+  
 }
